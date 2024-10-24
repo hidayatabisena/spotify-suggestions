@@ -1,5 +1,6 @@
 import spotifyService from '../services/spotify.service.js';
 import openaiService from '../services/openai.service.js';
+import { renderSuggestionsList } from '../utils/html-renderer.js';
 
 export const getSuggestions = async (req, res) => {
     try {
@@ -15,10 +16,15 @@ export const getSuggestions = async (req, res) => {
             songList.map(song => spotifyService.searchTrack(song))
         );
 
+        const suggestions = spotifyResults.filter(result => result !== null);
+
+        const htmlContent = renderSuggestionsList(suggestions, criteria);
+
         return res.json({
             criteria,
-            suggestions: spotifyResults.filter(result => result !== null),
-            timestamp: new Date().toISOString()
+            suggestions,
+            timestamp: new Date().toISOString(),
+            html: htmlContent
         });
     } catch (error) {
         console.error('Error processing request:', error);
