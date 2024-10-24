@@ -2,6 +2,8 @@
 
 A Plugin that generates intelligent song suggestions using OpenAI and fetches detailed track information from Spotify. Perfect for integration as a plugin or standalone service.
 
+![Plugin Spotify MAIA](https://res.cloudinary.com/moyadev/image/upload/v1729772064/pluginmaiaspotify_bpcoov.png)
+
 ## ✨ Features
 
 - 🤖 AI-powered song suggestions using OpenAI
