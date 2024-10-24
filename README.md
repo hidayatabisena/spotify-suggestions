@@ -158,7 +158,7 @@ spotify-suggestions/
 
 ## 📝 License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the MIT License - see the [LICENSE](https://github.com/hidayatabisena/spotify-suggestions/blob/main/LICENSE.md) file for details.
 
 ## 🙏 Acknowledgments
 
