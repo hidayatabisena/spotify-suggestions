@@ -1,7 +1,10 @@
 import express from 'express';
+import dotenv from 'dotenv';
 import { config } from './config.js';
 import spotifyService from './services/spotify.service.js';
 import { getSuggestions } from './controllers/suggestions.controller.js';
+
+dotenv.config();
 
 const app = express();
 
